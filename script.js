@@ -35,12 +35,11 @@ function rot13(encodedStr) {
 	for(let i=0;i<encodedStr.length;i++)
 		{
 			if(encodedStr.charAt(i)==lookup.key)
-			decodedArr[i]=lookup.value;
+			decodedArr.push(i)=lookup.value;
 		}
-
- console.log(decodedArr);
+return decodedArr;
+// console.log(decodedArr);
 }
-
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
 // console.log(rot13("SERR YBIR? NPPVBWBO"));
